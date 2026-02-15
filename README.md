@@ -33,9 +33,9 @@ The following 6 Machine Learning models were trained and evaluated:
 ## Observations
 | ML Model Name | Observation about model performance |
 |---|---|
-| Logistic Regression |  |
-| Decision Tree Classifier |  |
-| K-Nearest Neighbor (KNN) |  |
-| Naive Bayes (Gaussian) |  |
-| Random Forest Classifier |  |
-| XGBoost Classifier |  |
+| Logistic Regression | **Best Performing Model (Accuracy: 98.25%)**. It achieved the highest overall accuracy and balanced precision/recall, suggesting that the dataset features have a strong linear separation. |
+| Decision Tree Classifier | Lowest performance (Accuracy: 92.11%). While easy to interpret, it struggled compared to ensemble and linear methods, likely due to inability to capture smooth decision boundaries. |
+| K-Nearest Neighbor (KNN) | **Excellent Recall (1.0000)**. It correctly identified all malignant cases, which is critical for medical diagnosis. Scaling the data significantly improved its performance. |
+| Naive Bayes (Gaussian) | Solid baseline performance (Accuracy: 94.74%). The high AUC (0.9881) indicates it ranks positive examples well, showing the features reasonably follow a Gaussian distribution. |
+| Random Forest Classifier | Strong performance (Accuracy: 94.74%) with very high AUC (0.9944). As an ensemble method, it proved robust, though slightly outperformed by the simpler Logistic Regression in this specific test split. |
+| XGBoost Classifier | Competitive performance (Accuracy: 94.74%). While powerful, it performed similarly to Random Forest and did not surpass the linear model, possibly due to the dataset size or linear nature of the problem. |
